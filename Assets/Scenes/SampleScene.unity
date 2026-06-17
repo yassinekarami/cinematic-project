@@ -618,7 +618,7 @@ MonoBehaviour:
   version: 2
   globalVolume: 0
   mode: 0
-  size: {x: 8.82757, y: 6.1408815, z: 37.18291}
+  size: {x: 9.045, y: 6.1408815, z: 37.32744}
   overrideRendererFilters: 0
   minRendererVolumeSize: 0.1
   objectLayerMask:
@@ -656,7 +656,7 @@ Transform:
   m_GameObject: {fileID: 205074033}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.45440507, y: 0.8499901, z: -11.494894}
+  m_LocalPosition: {x: -0.34569, y: 0.8499901, z: -11.499161}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1549,8 +1549,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428446909}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.10327342, y: 1.6897154, z: -32.91936}
+  m_LocalRotation: {x: 0.021989377, y: 0, z: 0, w: 0.99975824}
+  m_LocalPosition: {x: -0.10327342, y: 1.909556, z: -41.944527}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1568,9 +1568,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4700f9f03ad19f94baf0367cb7a9c988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineFollowZoom
-  Width: 0.74
-  Damping: 2.68
-  FovRange: {x: 3, y: 60}
+  Width: 0.5
+  Damping: 4.01
+  FovRange: {x: 45.80272, y: 74.07483}
 --- !u!114 &428446912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1583,7 +1583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886251e9a18ece04ea8e61686c173e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachinePositionComposer
-  CameraDistance: 1.04
+  CameraDistance: 1.2
   DeadZoneDepth: 0
   Composition:
     ScreenPosition: {x: 0, y: 0}
@@ -2589,7 +2589,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &812154470
 Transform:
   m_ObjectHideFlags: 0
@@ -3033,7 +3033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7697400115263626470, guid: 860f8f4f428d77c439c9bc2b65e726d4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.65
+      value: -28.51
       objectReference: {fileID: 0}
     - target: {fileID: 7697400115263626470, guid: 860f8f4f428d77c439c9bc2b65e726d4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3198,7 +3198,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7697400115263626470, guid: 860f8f4f428d77c439c9bc2b65e726d4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.647999
+      value: -28.508
       objectReference: {fileID: 0}
     - target: {fileID: 7697400115263626470, guid: 860f8f4f428d77c439c9bc2b65e726d4, type: 3}
       propertyPath: m_LocalRotation.w
