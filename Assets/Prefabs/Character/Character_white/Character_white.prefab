@@ -1577,10 +1577,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2be3a6c28d31d32478e7e918b2ad2b0b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1153220835403533601}
+      addedObject: {fileID: 2954518935103873681}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2be3a6c28d31d32478e7e918b2ad2b0b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9051483803571904635}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2be3a6c28d31d32478e7e918b2ad2b0b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2909368817177038925}
   m_SourcePrefab: {fileID: 100100000, guid: 2be3a6c28d31d32478e7e918b2ad2b0b, type: 3}
 --- !u!4 &7436315501556943432 stripped
 Transform:
@@ -1592,7 +1595,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2be3a6c28d31d32478e7e918b2ad2b0b, type: 3}
   m_PrefabInstance: {fileID: 9092435206123489018}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1153220835403533601
+--- !u!114 &2954518935103873681
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1604,7 +1607,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98c83f721626dd34ebfbddc8d013c3ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterAudio
-  walkScriptableAudio: {fileID: 0}
   runScriptableAudio: {fileID: 0}
   breathingScriptableAudio: {fileID: 11400000, guid: 4608639a012f2a34d9640ca2857f13d3, type: 2}
   audioSource: {fileID: 9051483803571904635}
@@ -1621,7 +1623,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 37bb898b866ab004e9cfa9f73566e464, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1705,6 +1707,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2909368817177038925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8282041050398342059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalReceiver
+  m_Events:
+    m_Signals: []
+    m_Events: []
 --- !u!4 &8765246052002586897 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2be3a6c28d31d32478e7e918b2ad2b0b, type: 3}

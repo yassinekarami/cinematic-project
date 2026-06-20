@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Character_black_walking
   m_EditorClassIdentifier: Assembly-CSharp::AudioScriptableObject
   audioClip: {fileID: 8300000, guid: 260633151acaa004f8b48f7c697334a2, type: 3}
-  volume: 0.5
+  volume: 1

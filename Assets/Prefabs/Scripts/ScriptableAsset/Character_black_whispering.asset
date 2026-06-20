@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Character_black_whispering
   m_EditorClassIdentifier: Assembly-CSharp::AudioScriptableObject
   audioClip: {fileID: 8300000, guid: 612a524b293749847941d8670749be4a, type: 3}
-  volume: 1
+  volume: 0

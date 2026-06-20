@@ -14,13 +14,13 @@ public class CharacterAudio : MonoBehaviour
     {
         this.audioSource = GetComponent<AudioSource>();
     }
-    public void OnFootstep()
+    public void PlayFootstepSound()
     {
-        Debug.LogWarning("Walk walkScriptableAudio is not assigned in the inspector.");
+        Debug.LogWarning("walkScriptableAudio is not assigned in the inspector.");
 
     }
 
-    public void OnBreathing()
+    public void PlayBreathingSound()
     {
         if (breathingScriptableAudio != null)
         {
@@ -28,7 +28,7 @@ public class CharacterAudio : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Walk breathingScriptableAudio is not assigned in the inspector.");
+            Debug.LogWarning("breathingScriptableAudio is not assigned in the inspector.");
         }
     }
 

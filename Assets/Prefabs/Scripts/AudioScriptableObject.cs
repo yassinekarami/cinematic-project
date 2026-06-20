@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SocialPlatforms;
 
 [CreateAssetMenu(fileName = "AudioScriptableObject", menuName = "Scriptable Objects/AudioScriptableObject")]

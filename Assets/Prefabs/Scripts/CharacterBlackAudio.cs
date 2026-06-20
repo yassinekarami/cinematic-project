@@ -10,11 +10,11 @@ public class CharacterBlackAudio : MonoBehaviour
     {
         this.audioSource = GetComponent<AudioSource>();
     }
-    public void OnFootstep()
+    public void PlayFootstepSound()
     {
         if (walkScriptableAudio != null)
         {
-            this.walkScriptableAudio.play(audioSource);
+          //  this.walkScriptableAudio.play(audioSource);
         }
         else
         {
@@ -23,11 +23,11 @@ public class CharacterBlackAudio : MonoBehaviour
 
     }
 
-    public void OnWhispering()
+    public void PlayWhisperingSound()
     {
         if (whisperingScriptableAudio != null)
         {
-            this.whisperingScriptableAudio.play(audioSource);
+       //     this.whisperingScriptableAudio.play(audioSource);
         }
         else
         {
