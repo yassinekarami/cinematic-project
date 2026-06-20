@@ -3,35 +3,12 @@ using UnityEngine.Audio;
 
 public class CharacterBlackAudio : MonoBehaviour
 {
-    public AudioScriptableObject walkScriptableAudio;
-    public AudioScriptableObject whisperingScriptableAudio;
-    public AudioSource audioSource;
-    public void Start()
-    {
-        this.audioSource = GetComponent<AudioSource>();
-    }
-    public void PlayFootstepSound()
-    {
-        if (walkScriptableAudio != null)
-        {
-          //  this.walkScriptableAudio.play(audioSource);
-        }
-        else
-        {
-            Debug.LogWarning("Walk walkScriptableAudio is not assigned in the inspector.");
-        }
 
-    }
+    public AudioSource walkingAudioSource;
 
-    public void PlayWhisperingSound()
+    public void StopWalkingAudioSource()
     {
-        if (whisperingScriptableAudio != null)
-        {
-       //     this.whisperingScriptableAudio.play(audioSource);
-        }
-        else
-        {
-            Debug.LogWarning("Walk whisperingScriptableAudio is not assigned in the inspector.");
-        }
+        walkingAudioSource.Stop();
     }
+   
 }

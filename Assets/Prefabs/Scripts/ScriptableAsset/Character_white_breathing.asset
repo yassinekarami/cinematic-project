@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Character_white_breathing
   m_EditorClassIdentifier: Assembly-CSharp::AudioScriptableObject
   audioClip: {fileID: 8300000, guid: 37bb898b866ab004e9cfa9f73566e464, type: 3}
-  volume: 0.1
+  volume: 0
+  maxVolume: 1
+  volumeIncreaseRate: 0.05

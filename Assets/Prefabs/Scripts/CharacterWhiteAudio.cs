@@ -7,6 +7,7 @@ public class CharacterAudio : MonoBehaviour
     public AudioScriptableObject runScriptableAudio;
     public AudioScriptableObject breathingScriptableAudio;
 
+    private float newVolume;
 
     public AudioSource audioSource;
 
@@ -20,6 +21,14 @@ public class CharacterAudio : MonoBehaviour
 
     }
 
+    private void FixedUpdate()
+    {
+        if (this.breathingScriptableAudio.isPlaying(audioSource))
+        {
+            newVolume = this.breathingScriptableAudio.getNewVolume(audioSource);
+            this.breathingScriptableAudio.increaseVolume(audioSource, newVolume);
+        }
+    }
     public void PlayBreathingSound()
     {
         if (breathingScriptableAudio != null)

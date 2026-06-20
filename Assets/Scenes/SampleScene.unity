@@ -647,6 +647,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8306386999665170266, guid: 7bd9d94c5ed8466449e48ccf412f6fe5, type: 3}
   m_PrefabInstance: {fileID: 89884307}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &93420965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8904097924444340086, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
+  m_PrefabInstance: {fileID: 3923809812075182001}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &146666086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2408,7 +2413,7 @@ Transform:
   m_GameObject: {fileID: 428446909}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.1530124, y: 0.87289244, z: -59.569218}
+  m_LocalPosition: {x: -1.1530124, y: 0.87289244, z: -62.32954}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2426,7 +2431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4700f9f03ad19f94baf0367cb7a9c988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineFollowZoom
-  Width: 0.5
+  Width: 1.655748
   Damping: 4.01
   FovRange: {x: 45.80272, y: 74.07483}
 --- !u!114 &428446912
@@ -2441,7 +2446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886251e9a18ece04ea8e61686c173e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachinePositionComposer
-  CameraDistance: 1.2
+  CameraDistance: 3.960325
   DeadZoneDepth: 0
   Composition:
     ScreenPosition: {x: 0, y: 0}
@@ -4689,8 +4694,6 @@ PlayableDirector:
     value: {fileID: 1215158895}
   - key: {fileID: -3783513488556722342, guid: 40176153e2ff6d24585cf132cc73a932, type: 2}
     value: {fileID: 1629082715}
-  - key: {fileID: -4042771780185194424, guid: 40176153e2ff6d24585cf132cc73a932, type: 2}
-    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - a82c1b983395f2049842e5eaeabf803a: {fileID: 0}
@@ -8555,7 +8558,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7875548939924841477, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
   m_PrefabInstance: {fileID: 3923809812075182001}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 93420965}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
@@ -10980,6 +10983,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character_white
       objectReference: {fileID: 0}
+    - target: {fileID: 9051483803571904635, guid: 514d458568b32194087fbf2bd710d04f, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10995,28 +11002,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1363093061852607030, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
       propertyPath: m_Volume
-      value: 1
+      value: 0.8
       objectReference: {fileID: 0}
-    - target: {fileID: 1363093061852607030, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
-      propertyPath: MaxDistance
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1363093061852607030, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
-      propertyPath: MinDistance
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1363093061852607030, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
-      propertyPath: rolloffMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1363093061852607030, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4504451681581717476, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 8300000, guid: d957977179ad6d341a49fbb4d05907dd, type: 3}
     - target: {fileID: 4678785952610632428, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
       propertyPath: m_Name
       value: Character_black
@@ -11061,6 +11048,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5584044991932628618, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
+      propertyPath: walkingAudioSource
+      value: 
+      objectReference: {fileID: 3923809812075182005}
+    - target: {fileID: 7875548939924841477, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7875548939924841477, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7875548939924841477, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7875548939924841477, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3923809812075182003}
+    - target: {fileID: 7875548939924841477, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 93420965}
+    - target: {fileID: 7875548939924841477, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7875548939924841477, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StopWalkingAudioSource
+      objectReference: {fileID: 0}
+    - target: {fileID: 7875548939924841477, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CharacterBlackAudio, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7875548939924841477, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CharacterBlackAudio, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7875548939924841477, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11069,6 +11100,22 @@ PrefabInstance:
 --- !u!95 &3923809812075182002 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 1156567967328711231, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
+  m_PrefabInstance: {fileID: 3923809812075182001}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3923809812075182003 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5584044991932628618, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
+  m_PrefabInstance: {fileID: 3923809812075182001}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93420965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 919ab69e540433046bdbca22b8753294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterBlackAudio
+--- !u!82 &3923809812075182005 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4504451681581717476, guid: b5d206e532e17ad4c8227220880f537f, type: 3}
   m_PrefabInstance: {fileID: 3923809812075182001}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807

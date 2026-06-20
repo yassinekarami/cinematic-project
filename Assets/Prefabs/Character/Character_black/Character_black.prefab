@@ -1834,9 +1834,9 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 5584044991932628618}
-          m_TargetAssemblyTypeName: CharacterBlackAudio, Assembly-CSharp
-          m_MethodName: PlayFootstepSound
+        - m_Target: {fileID: 1363093061852607030}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Stop
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
