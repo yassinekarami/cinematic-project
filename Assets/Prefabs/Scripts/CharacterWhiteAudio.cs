@@ -26,7 +26,7 @@ public class CharacterAudio : MonoBehaviour
         if (this.breathingScriptableAudio.isPlaying(audioSource))
         {
             newVolume = this.breathingScriptableAudio.getNewVolume(audioSource);
-            this.breathingScriptableAudio.increaseVolume(audioSource, newVolume);
+            this.breathingScriptableAudio.handleVolume(audioSource, newVolume);
         }
     }
     public void PlayBreathingSound()

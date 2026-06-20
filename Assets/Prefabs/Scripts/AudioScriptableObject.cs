@@ -45,7 +45,7 @@ public class AudioScriptableObject : ScriptableObject
         return newVolume;
     }
 
-    public void increaseVolume(AudioSource audioSource, float newVolume)
+    public void handleVolume(AudioSource audioSource, float newVolume)
     {
         audioSource.volume = Mathf.Clamp(newVolume, 0.0f, maxVolume);
     }
