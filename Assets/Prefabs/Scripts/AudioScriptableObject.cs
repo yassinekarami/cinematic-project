@@ -40,7 +40,6 @@ public class AudioScriptableObject : ScriptableObject
         if (newVolume < maxVolume)
         {
             newVolume += Time.deltaTime * volumeIncreaseRate; 
-            Debug.Log("Increasing volume: " + newVolume);
         }
         return newVolume;
     }
