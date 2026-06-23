@@ -6,6 +6,7 @@ public class EndSceneSignalTrackHandler : MonoBehaviour
     public Image endBlackScreen;
     public AudioScriptableObject doorSlammingAudioScriptableObject;
     private AudioSource audioSource;
+    public AudioListener audioListener;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,6 +22,7 @@ public class EndSceneSignalTrackHandler : MonoBehaviour
         }
 
         endBlackScreen.enabled = true;
+        audioListener.enabled = false;
     }
 
 }
