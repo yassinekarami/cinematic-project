@@ -5,24 +5,33 @@ public class EndSceneSignalTrackHandler : MonoBehaviour
 {
     public Image endBlackScreen;
     public AudioScriptableObject doorSlammingAudioScriptableObject;
-    private AudioSource audioSource;
-    public AudioListener audioListener;
+    private AudioSource _selfAudioSource;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         endBlackScreen.enabled = false;
-        audioSource = GetComponent<AudioSource>();
+        _selfAudioSource = GetComponent<AudioSource>();
     }
 
     public void HandleEndSceneSignal()
     {
         if (doorSlammingAudioScriptableObject != null)
         {
-            doorSlammingAudioScriptableObject.play(audioSource);
+            doorSlammingAudioScriptableObject.play(_selfAudioSource);
         }
 
         endBlackScreen.enabled = true;
-        audioListener.enabled = false;
+    }
+
+    public void StopAllAudioSourceExceptSelf()
+    {
+        AudioSource[] allSources = FindObjectsByType<AudioSource>(FindObjectsSortMode.None);
+
+        foreach (AudioSource source in allSources)
+        {
+            if (source != _selfAudioSource)
+                source.Stop();
+        }
     }
 
 }
